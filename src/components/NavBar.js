@@ -38,7 +38,7 @@ const NavBar = () => {
             <nav className="flex items-center justify-center flex-wrap">
                 <motion.a
                     href="https://fr.linkedin.com/in/alexandre-ribault-00945668"
-                    target={"_blank"}
+                    target="_blank"
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                     className="w-6 mx-3"
@@ -47,7 +47,7 @@ const NavBar = () => {
                 </motion.a>
                 <motion.a
                     href="https://github.com/Forerunner78"
-                    target={"_blank"}
+                    target="_blank"
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                     className="w-6 mx-3"
