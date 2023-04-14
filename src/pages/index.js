@@ -23,8 +23,9 @@ export default function Home() {
                             <Image
                                 src={profilePic}
                                 alt="Forerunner's generated profile pic"
-                                className="w-auto h-auto m-auto rounded-full shadow-2xl
-                                "
+                                className="w-auto h-auto m-auto rounded-full shadow-2xl"
+                                priority
+                                sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
                             />
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center">
