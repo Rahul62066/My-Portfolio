@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedInIcon } from "./Icons";
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
@@ -12,7 +13,7 @@ const CustomLink = ({ href, title, className = "" }) => {
             <span
                 className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-1 
             group-hover:w-full transition-[width] ease duration-300
-            ${router.asPath === href ? "w-full" : "w-0"}
+            ${router.asPath === href ? "w-full" : "w-0"} dark:bg-light
             `}
             >
                 &nbsp;
@@ -22,13 +23,13 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 
 const NavBar = () => {
+    const [mode, setMode] = useThemeSwitcher();
     return (
-        <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+        <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
             <nav>
                 <CustomLink href="/" title="Home" className="mr-4" />
                 <CustomLink href="/about" title="About" className="mr-4" />
                 <CustomLink href="/projects" title="Projects" className="mr-4" />
-                <CustomLink href="/articles" title="Articles" className="mr-4" />
             </nav>
 
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
@@ -54,6 +55,18 @@ const NavBar = () => {
                 >
                     <GithubIcon />
                 </motion.a>
+                <button
+                    className={`w-6 mx-3 flex items-center justify-center rounded-full p-1 ${
+                        mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+                    }`}
+                    onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                >
+                    {mode === "dark" ? (
+                        <SunIcon className={"fill-dark"} />
+                    ) : (
+                        <MoonIcon className={"fill-dark"} />
+                    )}
+                </button>
             </nav>
         </header>
     );
