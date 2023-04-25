@@ -12,6 +12,11 @@ module.exports = {
                 light: "#f5f5f5",
                 primary: "#B63E96",
                 primaryDark: "#58E6D9",
+                primaryRed: "#FF0000",
+                primaryBlue: "	#1E90FF",
+                primaryPurple: "#FF00FF",
+                primaryDarkOrange: "#FFA500",
+                primaryDarkYellow: "#FFFF00",
             },
             animation: { "spin-slow": "spin 8s linear infinite" },
             backgroundImage: {
