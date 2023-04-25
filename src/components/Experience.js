@@ -1,13 +1,37 @@
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
+import { projects } from "./data/Projects";
+
+const CollabDetails = ({ collaborations }) => {
+    return collaborations.map((collab) => (
+        <Details
+            key={collab.company}
+            position={collab.position}
+            company={collab.company}
+            companyLink={collab.companyLink}
+            time={collab.time}
+            address={collab.address}
+            work={collab.work}
+        />
+    ));
+};
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null);
+    const displayWork = (works) => {
+        return works.split(". ").map(function (description, index) {
+            return (
+                <li key={index} className="list-disc ms-9">
+                    {description}
+                </li>
+            );
+        });
+    };
     return (
         <li
             ref={ref}
-            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between"
         >
             <LiIcon reference={ref} />
             <motion.div
@@ -15,7 +39,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, type: "spring" }}
             >
-                <h3 className="capitalize font-bold text-2xl">
+                <h3 className="capitalize font-bold text-xl">
                     {position}&nbsp;
                     <a
                         href={companyLink}
@@ -28,7 +52,9 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                 <span className="capitalize font-medium text-dark/75 dark:text-light/75">
                     {time} | {address}
                 </span>
-                <p className="font-medium w-full">{work}</p>
+                <div className="font-medium text-md w-full">
+                    <ul>{displayWork(work)}</ul>
+                </div>
             </motion.div>
         </li>
     );
@@ -40,63 +66,19 @@ const Experience = () => {
         target: ref,
         offset: ["start end", "center start"],
     });
+    const collaborations = projects.collaborations;
     return (
         <div className="my-64">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center">Experience</h2>
+            <h2 className="font-bold text-8xl mb-32 w-full text-center">
+                Experiences professionnelles
+            </h2>
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
                     className="absolute left-9 top-0.5 w-[4px] h-full bg-dark origin-top dark:bg-light"
                     style={{ scaleY: scrollYProgress }}
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
-                    <Details
-                        position="lorem"
-                        company="lorem"
-                        companyLink="lorem"
-                        time="lorem"
-                        address="lorem"
-                        work="lorem"
-                    />
-                    <Details
-                        position="lorem"
-                        company="lorem"
-                        companyLink="lorem"
-                        time="lorem"
-                        address="lorem"
-                        work="lorem"
-                    />
-                    <Details
-                        position="lorem"
-                        company="lorem"
-                        companyLink="lorem"
-                        time="lorem"
-                        address="lorem"
-                        work="lorem"
-                    />
-                    <Details
-                        position="lorem"
-                        company="lorem"
-                        companyLink="lorem"
-                        time="lorem"
-                        address="lorem"
-                        work="lorem"
-                    />
-                    <Details
-                        position="lorem"
-                        company="lorem"
-                        companyLink="lorem"
-                        time="lorem"
-                        address="lorem"
-                        work="lorem"
-                    />
-                    <Details
-                        position="lorem"
-                        company="lorem"
-                        companyLink="lorem"
-                        time="lorem"
-                        address="lorem"
-                        work="lorem"
-                    />
+                    <CollabDetails collaborations={collaborations} />
                 </ul>
             </div>
         </div>
