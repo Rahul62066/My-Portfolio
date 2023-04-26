@@ -3,8 +3,8 @@ import Technologies from "./Technologies";
 
 const Footer = () => {
     return (
-        <footer className="w-full boder-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light">
-            <Layout className="py-8 w-full">
+        <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light">
+            <Layout className="pt-8 pb-14 w-full">
                 <div className="absolute left-[50%] bottom -py-5 translate-x-[-50%] flex items-center flex-col">
                     <div>
                         Build with{" "}
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col absolute right-[7%] items-end">
                     <div>{new Date().getFullYear()} &copy; All Rights Reserved</div>
-                    <div>
+                    <div className="text-sm">
                         Thank you{" "}
                         <a
                             href="https://github.com/codebucks27"
