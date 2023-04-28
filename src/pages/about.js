@@ -9,6 +9,7 @@ import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
 import { projects } from "../components/data/Projects";
+import TransitionEffect from "../components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null);
@@ -54,9 +55,18 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>Forerunner | About Page</title>
-                <meta name="description" content="About page" />
+                <title>Présentation et parcours d'Alexandre Ribault</title>
+                <meta
+                    name="description"
+                    content="Renseignements sur les expériences professionnelles et les études d'Alexandre Ribault"
+                />
+                <meta property="og:title" content="Présentation et parcours d'Alexandre Ribault" />
+                <meta
+                    property="og:description"
+                    content="Renseignements sur les expériences professionnelles et les études d'Alexandre Ribault"
+                />
             </Head>
+            <TransitionEffect />
             <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout className="p-32 pt-16 xl:p-24 lg:p-16 md:p-12 sm:pt-8 ">
                     <AnimatedText
@@ -86,8 +96,8 @@ const About = () => {
                             </p>
                             <p className="text-justify font-medium indent-10">
                                 Pour être plus polyvalent et efficace, j'ai également suivi des
-                                formations et appris de nouvelles technologies front-end telles que
-                                React, Next.js ou encore TailwindCSS. N'hésitez pas à consulter mes
+                                formations et appris de nouvelles technologies telles que React,
+                                Next.js ou encore TailwindCSS. N'hésitez pas à consulter mes
                                 différents projets!
                             </p>
                         </div>

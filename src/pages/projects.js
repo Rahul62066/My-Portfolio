@@ -7,6 +7,7 @@ import { GithubIcon } from "../components/Icons";
 import { motion } from "framer-motion";
 import { projects } from "../components/data/Projects";
 import Technologies from "../components/Technologies";
+import TransitionEffect from "../components/TransitionEffect";
 
 const DisplayProjects = () => {
     const personalProjects = projects.personnalProjects;
@@ -168,9 +169,15 @@ const Projects = () => {
     return (
         <>
             <Head>
-                <title>Forerunner | Projects Page</title>
-                <meta name="description" content="Projects page" />
+                <title>Projects d'Alexandre Ribault</title>
+                <meta name="description" content="Les différents projets d'Alexandre Ribault" />
+                <meta property="og:title" content="Projects d'Alexandre Ribault" />
+                <meta
+                    property="og:description"
+                    content="Les différents projets d'Alexandre Ribault"
+                />
             </Head>
+            <TransitionEffect />
             <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16 p-32 xl:p-24 lg:p-16 md:p-12 sm:pt-8">
                     <AnimatedText
