@@ -3,10 +3,10 @@ import Technologies from "./Technologies";
 
 const Footer = () => {
     return (
-        <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light">
-            <Layout className="pt-8 pb-14 w-full">
-                <div className="absolute left-[50%] bottom -py-5 translate-x-[-50%] flex items-center flex-col">
-                    <div>
+        <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light sm:text-base p-0">
+            <Layout className="py-8 md:ps-0 flex items-center justify-evenly xs:flex-col lg:py-6 lg:ps-40 xl:ps-60">
+                <div className="xs:mb-3">
+                    <div className="">
                         Build with{" "}
                         <span className="text-primary dark:text-primaryDark text-2xl px-1">
                             &#9825;
@@ -18,10 +18,10 @@ const Footer = () => {
                         <Technologies tech1="#nextJS" tech2="#tailwindcss" tech3="#framer-motion" />
                     </div>
                 </div>
-                <div className="flex flex-col absolute right-[7%] items-end">
+                <div className="xs:mt-3">
                     <div>{new Date().getFullYear()} &copy; All Rights Reserved</div>
-                    <div className="text-sm">
-                        Thank you{" "}
+                    <div className="w-full flex justify-end mx-auto text-xs">
+                        Thank you&nbsp;
                         <a
                             href="https://github.com/codebucks27"
                             className="underline underline-offset-2 cursor-pointer"
