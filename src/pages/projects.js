@@ -169,7 +169,7 @@ const Projects = () => {
     return (
         <>
             <Head>
-                <title>Projects d'Alexandre Ribault</title>
+                <title>Projects d&apos;Alexandre Ribault</title>
                 <meta name="description" content="Les différents projets d'Alexandre Ribault" />
                 <meta property="og:title" content="Projects d'Alexandre Ribault" />
                 <meta
