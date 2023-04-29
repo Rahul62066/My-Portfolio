@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Page d'acceuil PortFolio d'Alexandre Ribault</title>
+                <title>Page d&apos;acceuil PortFolio d&apos;Alexandre Ribault</title>
                 <meta
                     name="description"
                     content="Portfolio d'Alexandre Ribault généré par NextJs"
@@ -45,9 +45,9 @@ export default function Home() {
                             />
                             <p className="my-4 text-base font-medium indent-10 text-justify md:text-sm sm:text-xs">
                                 Je suis un développeur back-end mais un développeur curieux avant
-                                tout. J'aime me diversifier, m'ouvrir à de nouvelles technologies.
-                                N'hésitez pas à explorer mes différents projets et à me contacter si
-                                vous avez des questions.
+                                tout. J&apos;aime me diversifier, m&apos;ouvrir à de nouvelles
+                                technologies. N&apos;hésitez pas à explorer mes différents projets
+                                et à me contacter si vous avez des questions.
                             </p>
                             <div className="flex items-center self-start mt-2 lg:self-center">
                                 <Link

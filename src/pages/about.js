@@ -55,7 +55,7 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>Présentation et parcours d'Alexandre Ribault</title>
+                <title>Présentation et parcours d&apos;Alexandre Ribault</title>
                 <meta
                     name="description"
                     content="Renseignements sur les expériences professionnelles et les études d'Alexandre Ribault"
@@ -80,24 +80,26 @@ const About = () => {
                             </h2>
                             <p className="text-justify font-medium indent-10">
                                 Je suis un développeur web avec une formation initiale scientifique.
-                                Mon parcours académique m'a permis d'acquérir des compétences telles
-                                que la recherche d'information, de solutions et la curiosité, que
-                                j'ai ensuite transposées au développement web.
+                                Mon parcours académique m&apos;a permis d&apos;acquérir des
+                                compétences telles que la recherche d&apos;information, de solutions
+                                et la curiosité, que j&apos;ai ensuite transposées au développement
+                                web.
                             </p>
                             <p className="text-justify font-medium indent-10 my-4">
-                                Au fil de mes {experienceYears()} années d'expérience dans
-                                l'écosystème SFCC, j'ai acquis de solides compétences techniques et
-                                une capacité à répondre rapidement et efficacement aux
-                                problématiques, ce qui m'a permis de contribuer significativement
-                                aux projets auxquels j'ai participé. J'ai obtenu la certification
-                                "Salesforce B2C Commerce Developer" qui atteste de mes compétences à
-                                gérer la configuration / contribution du Business Manager ainsi que
-                                le code sous-jacent.
+                                Au fil de mes {experienceYears()} années d&apos;expérience dans
+                                l&apos;écosystème SFCC, j&apos;ai acquis de solides compétences
+                                techniques et une capacité à répondre rapidement et efficacement aux
+                                problématiques, ce qui m&apos;a permis de contribuer
+                                significativement aux projets auxquels j&apos;ai participé.
+                                J&apos;ai obtenu la certification &quot;Salesforce B2C Commerce
+                                Developer&quot; qui atteste de mes compétences à gérer la
+                                configuration / contribution du Business Manager ainsi que le code
+                                sous-jacent.
                             </p>
                             <p className="text-justify font-medium indent-10">
-                                Pour être plus polyvalent et efficace, j'ai également suivi des
+                                Pour être plus polyvalent et efficace, j&apos;ai également suivi des
                                 formations et appris de nouvelles technologies telles que React,
-                                Next.js ou encore TailwindCSS. N'hésitez pas à consulter mes
+                                Next.js ou encore TailwindCSS. N&apos;hésitez pas à consulter mes
                                 différents projets!
                             </p>
                         </div>
