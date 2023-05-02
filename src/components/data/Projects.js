@@ -65,7 +65,7 @@ export const projects = {
             img: Portfolio,
             live_demo_url: "https://react-search-books-96687.firebaseapp.com/",
             gitHub_url: "https://github.com/Forerunner78/React-Books",
-            technologies: ["#ReactJS", "#Redux", "#Bootstrap"],
+            technologies: ["#nextJS", "#tailwindcss", "#framer-motion"],
             colSize: 12,
             summary:
                 "Site web portfolio créé en utilisant NextJS, framer-motion et TailwindCSS. Il est responsive, possède des animations et des transitions lorsque l'on change de page. Il répertorie tous les projets que j'ai pu mener.",
