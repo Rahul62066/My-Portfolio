@@ -81,9 +81,9 @@ const NavBar = () => {
             </button>
             <div className="w-full flex justify-between items-center lg:hidden">
                 <nav>
-                    <CustomLink href="/" title="Home" className="mr-4" />
-                    <CustomLink href="/about" title="About" className="mr-4" />
-                    <CustomLink href="/projects" title="Projects" className="mr-4" />
+                    <CustomLink href="/" title="Acceuil" className="mr-4" />
+                    <CustomLink href="/presentation" title="Présentation" className="mr-4" />
+                    <CustomLink href="/projets" title="Projets" className="mr-4" />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap">
@@ -127,16 +127,21 @@ const NavBar = () => {
                     className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
                 >
                     <nav className="flex items-center flex-col justify-center">
-                        <CustomMobileLink href="/" title="Home" className="" toggle={handleClick} />
                         <CustomMobileLink
-                            href="/about"
-                            title="About"
+                            href="/"
+                            title="Acceuil"
                             className=""
                             toggle={handleClick}
                         />
                         <CustomMobileLink
-                            href="/projects"
-                            title="Projects"
+                            href="/presentation"
+                            title="Presentation"
+                            className=""
+                            toggle={handleClick}
+                        />
+                        <CustomMobileLink
+                            href="/projets"
+                            title="Projets"
                             className=""
                             toggle={handleClick}
                         />
