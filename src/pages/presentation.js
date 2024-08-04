@@ -82,7 +82,7 @@ const About = () => {
                             A highly motivated computer science student at NIT Jamshedpur, I possess 
                             a strong passion for coding and actively seek opportunities to contribute my skills. 
                             My journey began with the NIT Jamshedpur Research and Consultancy website, where I played a key role in
-                             maintaining and enhancing the functionality of the college's official website.
+                             maintaining and enhancing the functionality of the college&apos;s official website.
                               This experience ignited my desire to leverage my coding expertise in diverse projects.
                             </p>
                             <p className="text-justify font-medium indent-10 my-4">
