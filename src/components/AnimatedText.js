@@ -18,12 +18,14 @@ const AnimatedText = ({ text, className = "" }) => {
                 variants={quote}
                 initial="initial"
                 animate="animate"
+                
             >
                 {text.split(" ").map((word, index) => (
                     <motion.span
                         key={word + "-" + index}
-                        className="inline-block"
+                        className="inline-block  text-7xl sm:text-5xl"
                         variants={singleWord}
+                        
                     >
                         {word}&nbsp;
                     </motion.span>

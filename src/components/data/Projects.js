@@ -1,12 +1,12 @@
-import Jungle from "./../../img/Jungle.jpg";
-import Books from "./../../img/Books2.jpg";
+import quize from "./../../img/quize.png";
+import blog from "./../../img/blog.png";
 import Hotel from "./../../img/Hotel.jpg";
 import Marvel from "./../../img/Marvel.jpg";
 import News from "./../../img/News.jpg";
-import Shiny from "./../../img/Shiny.jpg";
-import Portfolio from "./../../img/Portfolio.jpg";
+import paytm from "./../../img/paytm.png";
+import portfolio from "./../../img/portfolio.png";
 import WorkInProgress from "./../../img/WorkInProgress.jpg";
-import AlexShopEcommerce from "./../../img/Alex_Shop_Ecommerce.jpg";
+import chatapp from "./../../img/chatapp.png";
 
 export const projects = {
     collaborations: [
@@ -63,18 +63,19 @@ export const projects = {
     ],
     personnalProjects: [
         {
-            name: "Alex Shop - Site ecommerce",
-            img: AlexShopEcommerce,
-            live_demo_url: "https://alex-shop-blue.vercel.app/",
-            gitHub_url: "https://github.com/Forerunner78/alex-shop",
-            technologies: ["#nextJS", "#mongoDB", "#paypal"],
+            name: "Chat App - Site communication",
+            img: chatapp,
+            live_demo_url: "https://chat-app-frontend-ruby-nu.vercel.app/",
+            gitHub_url: "https://github.com/Rahul62066/chatAppFrontend.git",
+            gitHub_url2: "https://github.com/Rahul62066/chatAppBackend.git",
+            technologies: ["#ReactJS", "#mongoDB", "#Socket.io"],
             colSize: 12,
             summary:
                 "Site web ecommerce construit en utilisant la technologie MERN (mongoDB, Express, React et Node.js). Les données sont stockées sur mongoDB. Il permet de simuler des achats au moyen de Paypal. En outre il possède un système d'authentification.",
         },
         {
             name: "Site web Portfolio",
-            img: Portfolio,
+            img: portfolio,
             live_demo_url: "https://modern-portfolio-forerunner78.vercel.app/",
             gitHub_url: "https://github.com/Forerunner78/modern-portfolio",
             technologies: ["#nextJS", "#tailwindcss", "#framer-motion"],
@@ -83,31 +84,31 @@ export const projects = {
                 "Site web portfolio responsive créé en utilisant NextJS, framer-motion et TailwindCSS. Il possède des animations et des transitions. Il répertorie tous les projets que j'ai créés.",
         },
         {
-            name: "Application de recherche de livres",
-            img: Books,
-            live_demo_url: "https://react-search-books-96687.firebaseapp.com/",
-            gitHub_url: "https://github.com/Forerunner78/React-Books",
-            technologies: ["#ReactJS", "#Redux", "#Bootstrap"],
+            name: "Application for Blog",
+            img: blog,
+            live_demo_url: "https://blogapp-99xn.onrender.com",
+            gitHub_url: "https://github.com/Rahul62066/BlogApp.git",
+            technologies: ["#ReactJS", "#Redux", "#flowbite-react", "#firebase" ,"MongoDB"],
             colSize: 6,
             summary:
                 "Application créée en ReactJS. Elle permet de faire des recherches de livres en utilisant l'API Google et stocker ceux que l'on souhaite dans notre liste.",
         },
         {
-            name: "Shiny Agency",
-            img: Shiny,
+            name: "Basic payment app",
+            img: paytm,
             live_demo_url: "https://react-shiny-agency.firebaseapp.com/",
             gitHub_url: "https://github.com/Forerunner78/React-Shiny-Agency",
-            technologies: ["#ReactJS", "#Javascript", "#CSS3"],
+            technologies: ["#ReactJS", "#Javascript", "#TailwindCSS"],
             colSize: 6,
             summary:
                 "Template d'un site d'agence créé avec ReactJS. Il possède un dark mode et suggère des profils de développeur en fonction des besoins identifiés au moyen d'un test",
         },
         {
-            name: "La Maison Jungle",
-            img: Jungle,
+            name: " Basic Quize App ",
+            img: quize,
             live_demo_url: "https://forerunner78.github.io/React-La-Maison-Jungle/",
             gitHub_url: "https://github.com/Forerunner78/React-La-Maison-Jungle",
-            technologies: ["#React Js", "#HTML5", "#CSS3"],
+            technologies: ["#React Js", "#MongoDB", "#SCSS"],
             colSize: 6,
             summary:
                 "Template front-end d'un site e-commerce créé en React. Il permet de manipuler des données, les ajouter ou les retirer de son panier",

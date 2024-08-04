@@ -79,25 +79,26 @@ const NavBar = () => {
                     }`}
                 ></span>
             </button>
-            <div className="w-full flex justify-between items-center lg:hidden">
+            <div className="w-full flex justify-between text-xl font-bold items-center lg:hidden">
                 <nav>
-                    <CustomLink href="/" title="Acceuil" className="mr-4" />
-                    <CustomLink href="/presentation" title="Présentation" className="mr-4" />
-                    <CustomLink href="/projets" title="Projets" className="mr-4" />
+                    <CustomLink href="/" title="Home" className="mr-4" />
+                    <CustomLink href="/projets" title="Projects" className="mr-4" />
+                    <CustomLink href="/presentation" title="Experience" className="mr-4" />
+                    <CustomLink href="/about" title="About" className="mr-4" />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap">
                     <motion.a
-                        href="https://fr.linkedin.com/in/alexandre-ribault-00945668"
+                        href="https://www.linkedin.com/in/rahul-kumar-2b114b25b/"
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3"
                     >
-                        <LinkedInIcon />
+                        <LinkedInIcon  />
                     </motion.a>
                     <motion.a
-                        href="https://github.com/Forerunner78"
+                        href="https://github.com/Rahul62066"
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
