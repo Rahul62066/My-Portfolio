@@ -12,7 +12,7 @@ const Footer = () => {
                             &#9825;
                         </span>{" "}
                         by&nbsp;
-                        <span className="underline underline-offset-2">Forerunner</span>
+                        <span className="underline underline-offset-2">Rahul</span>
                     </div>
                     <div className="w-full flex justify-between mx-auto">
                         <Technologies tech1="#nextJS" tech2="#tailwindcss" tech3="#framer-motion" />
@@ -23,10 +23,10 @@ const Footer = () => {
                     <div className="w-full flex justify-end mx-auto text-xs">
                         Thank you&nbsp;
                         <a
-                            href="https://github.com/codebucks27"
+                            href="https://github.com/Rahul62066"
                             className="underline underline-offset-2 cursor-pointer"
                         >
-                            CodeBucks
+                            Rahul
                         </a>
                         !
                     </div>

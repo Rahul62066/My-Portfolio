@@ -1,3 +1,4 @@
+
 import AnimatedText from "../components/AnimatedText";
 import Head from "next/head";
 import Layout from "../components/Layout";
@@ -9,9 +10,9 @@ import { projects } from "../components/data/Projects";
 import Technologies from "../components/Technologies";
 import TransitionEffect from "../components/TransitionEffect";
 
-const DisplayProjects = () => {
-    const personalProjects = projects.personnalProjects;
-    return personalProjects.map(function (project, index) {
+const DisplayGroupProjects = () => {
+    const groupProjects = projects.groupProjects;
+    return groupProjects.map(function (project, index) {
         const title = project.name;
         const img = project.img;
         const summary = project.summary;
@@ -165,10 +166,10 @@ const Project = ({ title, summary, img, link, github, technologies }) => {
 
 const FramerImage = motion(Image);
 
-const Projects = () => {
+const GroupProjects = () => {
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>Projects</title>
                 <meta name="description" content="Diffrent projects by me" />
                 <meta property="og:title" content="Projects Rahul" />
@@ -183,13 +184,13 @@ const Projects = () => {
                     <AnimatedText
                         text="Projects"
                         className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-                    />
+                    /> */}
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-                        <DisplayProjects />
+                        <DisplayGroupProjects />
                     </div>
-                </Layout>
-            </main>
+                {/* </Layout>
+            </main> */}
         </>
     );
 };
-export default Projects;
+export default GroupProjects;

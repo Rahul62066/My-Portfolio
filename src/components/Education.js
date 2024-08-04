@@ -1,6 +1,8 @@
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
+import Image from "next/image";
+import profile from '../img/profile.jpg'
 import { education } from "./data/Education";
 
 const EducationDetails = ({ education }) => {
@@ -8,14 +10,13 @@ const EducationDetails = ({ education }) => {
         <Details
             key={educationFact.name}
             name={educationFact.name}
-            company={educationFact.company}
-            year={educationFact.year}
-            place={educationFact.address}
+            img={educationFact.img}
+            about={educationFact.about}
         />
     ));
 };
 
-const Details = ({ name, company, year, place }) => {
+const Details = ({ name,year ,img,about }) => {
     const ref = useRef(null);
     return (
         <li
@@ -31,11 +32,16 @@ const Details = ({ name, company, year, place }) => {
                 <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{name}</h3>
                 <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
                     {year} |{" "}
-                    <span className="uppercase font-bold text-primary dark:text-primaryDark">
-                        {company}
-                    </span>{" "}
-                    - {place}
+                    
                 </span>
+                {about}
+                <Image
+                                src={img}
+                                alt="certificate"
+                                className=" md:w-40 md:h-40 w-96 h-96 m-auto object-contain rounded-md shadow-2xl lg:inline-block lg:w-full"
+                                priority
+                                sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
+                            />
             </motion.div>
         </li>
     );
@@ -50,7 +56,7 @@ const Education = () => {
     return (
         <div className="my-64">
             <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-                Parcours d&apos;étude
+                Achievements
             </h2>
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
                 <motion.div

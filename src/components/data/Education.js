@@ -1,20 +1,19 @@
+import img1 from "../../img/sih.jpg";
+export {
+    img1,
+}
 export const education = [
     {
-        name: "Certification Salesforce B2C Commerce Developer",
+        name: "Certification Smart India Hackathon",
         year: 2023,
-        company: "Capgemini",
-        address: "Paris",
+        img: img1,
+        about: "Participated in Smart India Hackathon 2023",
     },
     {
-        name: "Reconversion professionnelle",
-        year: 2019,
-        company: "Agility Factory",
-        address: "Paris",
+        name: "Participate on Hack-de-science",
+        year: 2023,
+        img: "",
+        about:"Participate on Hack-de-science Hackathon in our Institute"
     },
-    {
-        name: "Doctorat de Biothérapie Cellulaire et Tissulaire",
-        year: 2018,
-        company: "IRSN",
-        address: "Fontenay-Aux-Roses",
-    },
+    
 ];
