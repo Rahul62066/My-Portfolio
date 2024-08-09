@@ -21,7 +21,7 @@ export const projects = {
                 "House99",
                 "Helena_Rubinstein",
                 "Itcosmetics",
-               
+
             ],
             position: "Developpeur Web Back-end chez Capgemini",
             company: "L'Oréal",
@@ -39,7 +39,7 @@ export const projects = {
             address: "Paris",
             work: "Refonte des filtres du site internet au moyen de javascript orienté objet.. Résolution de bugs.. Manipulation de custom / system objects.",
         },
-       
+
     ],
     groupProjects: [
         {
@@ -50,17 +50,17 @@ export const projects = {
             technologies: ["#ReactJS", "#Tailwind", "#Shadcn"],
             colSize: 6,
             summary:
-                "Application créée en ReactJS. Elle permet de faire des recherches de livres en utilisant l'API Google et stocker ceux que l'on souhaite dans notre liste.",
+                "This project integrates the Research and Consultancy section into the official NIT Jamshedpur website. It enhances accessibility and visibility for R&C activities and resources."
         },
         {
             name: "Ojass Event Project",
             img: ojass,
             live_demo_url: "https://www.ojass.org/",
             gitHub_url: "https://github.com/Forerunner78/React-Shiny-Agency",
-            technologies: ["#NextJS", "#Javascript", "#TailwindCSS","#framer-motion","#Shadcn"],
+            technologies: ["#NextJS", "#Javascript", "#TailwindCSS", "#framer-motion", "#Shadcn"],
             colSize: 6,
             summary:
-                "Template d'un site d'agence créé avec ReactJS. Il possède un dark mode et suggère des profils de développeur en fonction des besoins identifiés au moyen d'un test",
+                "This project is designed for NIT Jamshedpur's Ojass event, featuring an outstanding user interface. It provides an engaging and intuitive platform for event information and participation."
         },
     ],
     personnalProjects: [
@@ -73,7 +73,7 @@ export const projects = {
             technologies: ["#ReactJS", "#mongoDB", "#Socket.io"],
             colSize: 12,
             summary:
-                "Site web ecommerce construit en utilisant la technologie MERN (mongoDB, Express, React et Node.js). Les données sont stockées sur mongoDB. Il permet de simuler des achats au moyen de Paypal. En outre il possède un système d'authentification.",
+                "The chat app utilizes React and Socket.IO to provide real-time messaging with instant delivery and seamless interaction. It supports group chats, allowing users to communicate in larger settings, and features a friend request system for managing connections. An admin dashboard offers tools for overseeing user activities and managing app settings. The combination of these features ensures an engaging and efficient communication platform."
         },
         {
             name: "Site web Portfolio",
@@ -83,17 +83,17 @@ export const projects = {
             technologies: ["#nextJS", "#tailwindcss", "#framer-motion"],
             colSize: 6,
             summary:
-                "Site web portfolio responsive créé en utilisant NextJS, framer-motion et TailwindCSS. Il possède des animations et des transitions. Il répertorie tous les projets que j'ai créés.",
+                "My portfolio, built with Next.js and styled using Tailwind CSS, features smooth animations with Framer Motion. It highlights my projects and skills through an interactive, modern design."
         },
         {
             name: "Application for Blog",
             img: blog,
             live_demo_url: "https://blogapp-99xn.onrender.com",
             gitHub_url: "https://github.com/Rahul62066/BlogApp.git",
-            technologies: ["#ReactJS", "#Redux", "#flowbite-react", "#firebase" ,"MongoDB"],
+            technologies: ["#ReactJS", "#Redux", "#flowbite-react", "#firebase", "MongoDB"],
             colSize: 6,
             summary:
-                "Application créée en ReactJS. Elle permet de faire des recherches de livres en utilisant l'API Google et stocker ceux que l'on souhaite dans notre liste.",
+                "Built with React and styled with Tailwind CSS, this blog application enables admins to create, update, and delete articles, while users enjoy a seamless reading experience. It offers efficient content management and a responsive, user-friendly design."
         },
         {
             name: "Basic payment app",
@@ -103,7 +103,7 @@ export const projects = {
             technologies: ["#ReactJS", "#Javascript", "#TailwindCSS"],
             colSize: 6,
             summary:
-                "Template d'un site d'agence créé avec ReactJS. Il possède un dark mode et suggère des profils de développeur en fonction des besoins identifiés au moyen d'un test",
+                "This basic payment app uses sessions to securely save amounts in the database, ensuring efficient transaction management. It provides a simple and reliable solution for handling payments."
         },
         {
             name: " Basic Quize App ",
@@ -113,8 +113,8 @@ export const projects = {
             technologies: ["#React Js", "#MongoDB", "#SCSS"],
             colSize: 6,
             summary:
-                "Template front-end d'un site e-commerce créé en React. Il permet de manipuler des données, les ajouter ou les retirer de son panier",
+                "Our basic quiz app, developed using the MERN stack, was created by our web team during a hackathon. It offers an engaging and interactive way to test knowledge with seamless performance."
         },
-        
+
     ],
 };
